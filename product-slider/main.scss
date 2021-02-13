@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+$white: #fff;
+$black: #646464;
+$secoundary: rgb(187, 140, 21);
+$primary: #4d8eff;
+$accent: #2b6ddf;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  background: $white;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-left: 5rem;
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,h2,h3,h4 {
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    color: $black;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .product-slider {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.product-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 70%;
+  padding-top: 10rem;
+  p {
+    margin-top: 2rem;
+  }
+}
+
+.container {
+  width: 80vw;
+}
+.slider {
+  background: $white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  width: 70%;
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  #brand-img {
+    width: 22rem;
+    display: block;
+    height: 17rem;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #brand {
+    margin-bottom: 0.25rem;
+  }
+
+  #info {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.prev-btn,
+.next-btn {
+  color: $accent;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.6rem;
+  cursor: pointer;
+  :hover {
+    color: $primary;
+  }
+}
+
+.primary-btn {
+  margin-top: 0.5rem;
+  background: $primary;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  :hover {
+    background: $accent;
+    color: #fff;
+  }
+}
