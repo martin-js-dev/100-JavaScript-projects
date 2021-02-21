@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #8e9ed4;
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.wrapper {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	background-color: #b3bcdb;
+	padding: 20px 40px;
+    h2{
+        color:#4b4b4b;
+        margin-bottom: 0;
+    }
+    p{
+        color:#4b4b4b;
+    }
+}
+
+.form {
+	padding: 30px 40px;	
+    .form-input {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+         label {
+            display: inline-block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+         input {
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            display: block;
+            font-family: inherit;
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+            &:focus {
+                outline: 0;
+                border-color: #777;
+            }
+        }
+         i {
+            visibility: hidden;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+        }
+         span {
+            color: #e74c3c;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+    }
+
+    button {
+        background-color: #637bc9;;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        display: block;
+        font-family: inherit;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: #3d59b4;;
+        }
+    }
+}
+
+.form-input.success input {
+	border-color: #2ecc71;
+}
+
+.form-input.error input {
+	border-color: #e74c3c;
+}
+
+.form-input.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-input.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-input.error  span{
+	visibility: visible;
+}
