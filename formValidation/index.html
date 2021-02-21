@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Valdation</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Register your account</h2>
+            <p>Get all the benefits from our service</p>
+        </div>
+        <form id="form" class="form">
+            <div class="form-input">
+                <label for="username">Username</label>
+                <input type="text" placeholder="username" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error </span>
+            </div>
+            <div class="form-input">
+                <label for="username">Email</label>
+                <input type="email" placeholder="name@email.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error </span>
+            </div>
+            <div class="form-input">
+                <label for="username">Password</label>
+                <input type="password" placeholder="password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error </span>
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
