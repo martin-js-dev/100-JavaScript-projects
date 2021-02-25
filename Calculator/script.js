@@ -41,18 +41,65 @@ function calculate() {
     return `${total}`;
 }
 
-function operate() {
-   
+function operate(val1, val2, op) {
+    switch (op) {
+        case 'add':
+            return val1 + val2;
+
+        case 'subtract':
+            return val1 - val2;
+
+        case 'multiply':
+            return val1 * val2;
+
+        case 'divide':
+            return val1 / val2;
+
+        default:
+            return '0';
+    }
 }
 
-function reset() {
-    
+function reset(num = '0') {
+    numbers = [];
+    operations = [];
+    currentNumber = num;
 }
 
-function updateDisplay() {
-    
+function updateDisplay(num = '0') {
+    const digitCount = num.length;
+    const displayEl = document.getElementById('display');
+
+    if (digitCount >= 11 && digitCount < 15) {
+        displayEl.style.fontSize = '20px';
+    } else if (digitCount >= 15) {
+        displayEl.style.fontSize = '15px';
+    } else {
+        displayEl.style.fontSize = '28px';
+    }
+
+    displayEl.innerText = num;
 }
 
-function handleButtonPress() {
-    
+function handleButtonPress(btnId) {
+    if (btnId === 'dot') {
+        currentNumber = currentNumber + '.';
+        updateDisplay(currentNumber);
+    } else if (btnId === 'clear') {
+        reset();
+        updateDisplay();
+    } else if (!isNaN(Number.parseInt(btnId))) {
+        numberPress(btnId);
+    } else {
+        operatorPress(btnId);
+    }
 }
+
+function init() {
+    Array.from(document.getElementsByClassName('btn'))
+        .forEach(btn => {
+            btn.addEventListener('click', () => handleButtonPress(btn.id))
+        });
+}
+
+window.addEventListener('DOMContentLoaded', init);
