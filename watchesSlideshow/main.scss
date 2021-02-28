@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
+
+.button{
+    padding: 15px 30px;
+    margin-top: 30px;
+    border: none;
+    background-color: #5e5e5e;
+    border-radius: 5px;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: #333;
+    }
+}
+.product-wrapper {
+  background-color: #858585;
+  color: #fff;
+  border-radius: 15px;
+  margin: 0px auto;
+  padding: 30px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+
+.description{
+  line-height: 28px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-radius: 5px;
+    height: 220px;
+    width: 250px;
+    margin-right: 100px;
+  }
+  
+   .watch-details {
+    margin-left: 10px;
+  }
+  .w-name {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+   .price {
+    font-weight: normal;
+    margin: 10px 0;
+  }
+}
