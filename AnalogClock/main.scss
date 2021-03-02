@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+}
+.clock-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-top: -50px;
+}
+.clock {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border:2px solid black;
+  margin-top: 50px;
+  display: flex;
+ font-size: 30px;
+ border-radius: 5px;
+ .one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 120px;
+  .span1{
+    margin-left: 10px;
+  }
+  .span2{
+    margin-left: 250px;
+  }
+
+  .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -150px;
+  }
+}
+
+.arrow {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+  .hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  
+  .minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+  }
+  
+  .second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #212188;
+  }
+}
+}
