@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  background-color: blueviolet;
+}
+
+button {
+  background-color: #eee;
+  color:#333;
+  border: none;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-right: 1em;
+  margin-top: 1em;
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+  &:hover{
+      transform: scale(1.1);
+      background-color: #dad8d8;
+  }
+}
+
+hr {
+  margin-top: 10%;
+  height: 0.5em;
+  background-color: #eee;
+}
+.hr1{
+  margin-top: 0;
+}
+.title {
+  text-align: center;
+}
+
+
+.number {
+  margin: auto;
+  color: #333;
+  font-size: 3em;
+  text-align: center;
+  background-color: #eee;
+  padding: 30px;
+  width: 10%;
+  margin-top: -6%;
+  border-radius: 5px;
+}
+
+.cta-guess{
+    display: flex;
+    justify-content: center;
+}
+.message {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.score {
+  margin-top: 25%;
+  margin-left: 65%;
+}
+
+.record {
+  margin-top: 35%;
+  margin-left: 65%;
+}
+
+.guess-number {
+  margin-top: 5%;
+  height: 2em;
+  width: 200px;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: #924dd3;
+  border: none;
+  border-radius: 5px;
+  color:white;
+
+}
