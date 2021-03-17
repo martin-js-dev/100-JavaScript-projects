@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Lato';
+    background-color: #a55ebb;
+    margin: 0;
+
+    h1{
+        text-transform: uppercase;
+        color:#f2f2f2;
+        text-align: center;
+    }
+  }
+  .puzzle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    
+  }
+  .puzzle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .empty {
+    height: 150px;
+    width: 150px;
+    margin: 2px;
+    border: solid 2px black;
+    background: white;
+  }
+  
+  .fill {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+  }
+   
+  .hold {
+    border: solid 2px #ccc;
+  }
+  .hovered {
+    background-color: #333;
+    border-color: white;
+    
+  }
