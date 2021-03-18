@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=OpenSans:400&display=swap');
+* {
+box-sizing: border-box;
+}
+
+body {
+background-color: #c750c1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'Open Sans';
+min-height: 100vh;
+margin: 0;
+}
+
+
+canvas {
+background: #f0f0f0;
+display: block;
+border-radius: 5px;
+}
