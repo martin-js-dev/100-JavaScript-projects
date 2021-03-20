@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Keeper</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 >Keep your books organized</h1>
+          
+          <form class="form" id="form">
+            <div class="description">
+              <label for="title">Title</label>
+              <input type="text" id="title">
+            </div>
+            <div class="description">
+              <label for="author">Author</label>
+              <input type="text" id="author">
+            </div>
+            <div class="description">
+              <label for="isbn">ISBN#</label>
+              <input type="text" id="isbn">
+            </div>
+            <div class="description">
+              <label for="date">Date arrived</label>
+              <input type="text" id="date">
+            </div>
+            <button>submit</button>
+          </form>
+          <table>
+            <thead>
+              <tr class="row">
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th>Date arrived</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="list"></tbody>
+          </table>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
