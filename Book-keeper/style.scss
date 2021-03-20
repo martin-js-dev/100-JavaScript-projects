@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #d3d1d1;
+    h1{
+        color: #333;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+button{
+    margin-top: 0rem;
+    padding: 0.7rem 3rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color:#fff;
+    cursor: pointer;
+    &:focus{
+        border: none;
+    }
+}
+.btn-delete{
+    background-color: #f02f2f;
+    padding: 0.4rem 0.6rem;
+    color:#fff;
+    text-decoration: none;
+    
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2rem;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    
+    input{
+        padding: 0.7rem 0.5rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+    }
+    label{
+        margin-bottom: 0.5rem;
+        color: blueviolet;
+        font-weight: bold;
+    }
+}
+
+th{
+    width: 10rem;
+}
+
+table{
+    margin-top: 2rem;
+    border-spacing: 0px 10px;
+    border-collapse: separate;
+}
+
+.row{
+    background-color: #b38ed6;
+    height: 3rem;
+    color: #333;
+    border-radius: 5px;
+}
+
+td{
+    background-color: #ebebeb;
+    height: 2rem;
+    padding-left: 0.5rem;
+    text-align: center;
+}
