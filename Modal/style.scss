@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap');
+
+    $white:#f2f2f2;
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body{
+      font-family: 'Lato';
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 20px;
+  }
+  
+  .open {
+    font-weight: bold;
+    background: #3535f3;
+    color: $white;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #333;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+  
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal-popup {
+    position: relative;
+    max-width: 500px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: $white;
+    overflow: auto;
+    cursor: default;
+  }
+  
+  .modal-popup> * {
+    padding: 1rem;
+  }
+  
+  .modal-header {
+    background: #f54747;
+  }
+  
+  .modal-header .close {
+    font-size: 1.5rem;
+  }
+  .close{
+      margin-left: 27rem;
+      color:$white;
+  }
+  
