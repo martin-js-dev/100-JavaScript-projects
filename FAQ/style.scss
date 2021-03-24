@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+button{
+    &:focus{
+        outline: none;
+    }
+}
+.wrapper-faq-section {
+    font-family: 'Lato';
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 5rem;
+        color: #4c8c94;
+        text-transform: uppercase;
+        position: relative;
+    }
+}
+
+.wrapper-faq {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+ 
+
+.wrapper-questions {
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.question{
+    background-color: #fff;
+    color: #4c8c94;
+    cursor: pointer;
+    padding: 18px;
+    width: 85%;
+    text-align: left; 
+    border:none;
+    border-bottom: 0.2px solid #5c3c92;
+    transition: 0.4s;
+    font-size: 1.6rem;
+    i {
+        color:#5c3c92;
+        float: right;
+        font-size: 1.8rem;
+    }
+       
+}
+
+.active, .question:hover {
+    background-color: #eee;
+}
+    
+.answer {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    p {
+        color:#56848a;
+        font-size: 1.3rem;
+        width: 80%;
+        
+    }
+    
+} 
