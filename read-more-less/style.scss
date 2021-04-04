@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+body{
+    font-family: 'Roboto';
+    margin:10rem 20rem;
+    line-height: 1.5;
+}
+
+#myBtn {
+    text-transform: uppercase;
+    background: #cecaca;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.875rem;
+    border:none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    &:hover {
+      background: #b1aeae;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+#more {display: none;}
