@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+body {
+  font-family: "Open Sans";
+  margin: 50px 150px;
+}
+
+#myBar ,#myBarJ, #myBarC {
+    width: 20%;
+    height: 60px;
+    background-color: #f06529;
+    text-align: center; 
+    line-height: 60px; 
+    color: white;
+    border-radius: 5px;
+}
+#myBarJ{
+  background-color: #f0db4f ;
+}
+
+#myBarC {
+  background-color: #2965f1;
+}
+
+button{
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  border: none;
+  color:#333;
+  border-radius: 5px;
+  outline: none;
+
+}
