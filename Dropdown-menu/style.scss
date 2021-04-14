@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+body{
+  font-family: 'Lato';
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ce4b4b;
+    color:#fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  
+  .sidenav a, .dropdown-btn {
+    padding: 16px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+      background-color: #c92424;
+    }
+  }
+  
+  .active {
+    background-color: #c92424;
+    color: white;
+  }
+  
+  
+  .dropdown-container {
+    display: none;
+    background-color: #bb7171;
+    padding-left: 8px;
+  }
