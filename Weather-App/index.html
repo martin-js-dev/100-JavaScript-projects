@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper" >
+		<div class="title">
+			<h1>Weather Application</h1>
+		</div>
+		<div class="input">
+			<input type="text" name="search" class="input-search"  placeholder="Search for the city..">
+			<button type="button" class="button" onclick="clearResult()">RESET</button>
+		</div>
+		<div class="container" id ="container">
+			<div class="location">
+				<div class="city"></div>
+				<div class="l-date"></div>
+			</div>
+			<div class="temperature">
+				<div class="degrees"><span></span></div>
+				<div class="d-type"></div>
+				<div class="d-range"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
