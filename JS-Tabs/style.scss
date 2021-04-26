@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+body{
+  margin:0;
+  font-family: 'Roboto';
+}
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    background-color: #93d3d3;
+    
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 20px 85px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .tab.active {
+    background-color: #6aa8a8;
+  }
+  
+  .tab:hover {
+    background-color: #40a7a7;
+  }
+
+  img{
+    height: 200px;
+    width: 400px;
+  }
+  
+  .tab-content {
+    margin:100px 50px;
+  }
+  
