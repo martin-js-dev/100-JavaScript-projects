@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery in Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Seasons gallery</h1>
+    <div class="wrapper">
+        <div class="column">
+          <img src="img/winter.jpg" onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="column">
+          <img src="img/spring.jpg" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="column">
+          <img src="img/summer.jpg" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="column">
+          <img src="img/autumn.jpg" onclick="openModal();currentSlide(4)">
+        </div>
+      </div>
+      
+
+      <div id="myModal" class="modal">
+        
+        <ion-icon class="close" name="close-outline" onclick="closeModal()"></ion-icon>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="text">1 / 4</div>
+            <img src="img/winter.jpg" >
+          </div>
+      
+          <div class="mySlides">
+            <div class="text">2 / 4</div>
+            <img src="img/spring.jpg" >
+          </div>
+      
+          <div class="mySlides">
+            <div class="text">3 / 4</div>
+            <img src="img/summer.jpg" >
+          </div>
+      
+          <div class="mySlides">
+            <div class="text">4 / 4</div>
+            <img src="img/autumn.jpg" >
+          </div>
+      
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        
+          
+          <div class="details">
+            <img src="img/winter.jpg" onclick="currentSlide(1)">
+          </div>
+      
+          <div class="details">
+            <img src="img/spring.jpg" onclick="currentSlide(2)">
+          </div>
+      
+          <div class="details">
+            <img src="img/summer.jpg" onclick="currentSlide(3)" >
+          </div>
+      
+          <div class="details">
+            <img src="img/autumn.jpg" onclick="currentSlide(4)" >
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
