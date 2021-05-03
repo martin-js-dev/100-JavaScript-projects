@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+	font-family: 'Roboto';
+	margin-left: 20rem;
+}
+
+
+.wrapper{
+	width: 606px;
+	height: 456px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	border: solid #686767 3px;
+}
+
+.place{
+	height: 150px;
+	width: 200px;
+	border: solid #686767 1px;
+	
+}
+
+.mole {
+	background-image: url("mole.jpg");
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.title{
+	display: flex;
+}
