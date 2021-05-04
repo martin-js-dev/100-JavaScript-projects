@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto';
+    background-color: #f2f2f2;
+  }
+  
+  #wrapper {
+    height: 450px;
+    width: 360px;
+    margin: 100px auto;
+    background: #bbb9b9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    h1 {
+      background: #cf8da2;
+      color: white;
+      margin: 0;
+      padding: 10px 100px;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    
+  }
+  
+  p {
+    padding-left: 20px;
+  }
+  
+  form input[type="text"] {
+    width:90px;
+  }
+  
+  input {
+    padding-left: 20px;
+  }
+  
+  #amount {
+    font-size: 14px;
+    background-color: #f7f7f7;
+    width: 60%;
+    padding:  10px;
+    border:none;
+  }
+  
+  
+  #number-people {
+    width: 60%;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    border:none;
+  }
+  
+  
+  #satisfaction {
+    padding: 10px ;
+    font-size: 18px;
+    border:none;
+  }
+  
+  button {
+    text-transform: uppercase;
+    display: block;
+    margin: 30px auto;
+    background: #8f3d57;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    border: none;
+  }
+  
+  
+  #tip-amount {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #999696;
+     
+    span {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+    }
+  }
+  
