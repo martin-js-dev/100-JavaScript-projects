@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Word Counter</h1>
+        <textarea placeholder="Enter your text here..."></textarea>
+        <div class="calculation row">
+          <div>Characters: <span id="characterCount">0</span></div>
+          <div>Words: <span id="wordCount">0</span></div>
+        </div>
+        <div class="calculation row">
+          <div>Sentences: <span id="sentenceCount">0</span></div>
+          <div>Paragraphs: <span id="paragraphCount">0</span></div>
+        </div>
+        
+        <div class="keywords">
+          Top keywords:
+          <ul id="topKeywords">
+          </ul>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
