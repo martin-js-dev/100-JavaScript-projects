@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+  box-sizing: border-box;
+  background:#bdadad;
+  font-family: 'Lato'; 
+  color:#fff;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+}
+
+
+@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+
+@mixin opacity {
+  opacity:0.4;
+  filter:alpha(opacity=40); 
+  
+}
+
+
+.container{
+  @include clear;
+  width:100%;
+  margin:0 auto;
+}
+#catagoryName{
+  text-transform: uppercase;
+}
+canvas{
+  color:#fff;
+  border: #fff dashed 2px;
+  padding:15px;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+   margin:5px 0;
+}
+
+#alphabet {
+  @include clear;
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:55px;
+  height:50px;
+  padding-top:10px;
+  background:#fff;
+  color:#bdadad;
+  cursor:pointer;
+  border: solid 1px #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+    
+    &:hover{
+      background:#bdadad;
+      border: solid 1px #fff;
+      color:#fff;
+    }
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+.active {
+  @include opacity;
+  cursor:default;
+    
+  &:hover{
+      @include opacity;
+    }
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
+
+button{
+  cursor: pointer;
+  font-size:1.2em;
+  padding:18px 20px;
+  margin-top: 10px;
+}
