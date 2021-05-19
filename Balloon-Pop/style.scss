@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    font-family:'Lato';
+    padding: 30px;
+    background:#ededed;
+}
+
+.container{
+    max-width: 1490px;
+    margin: 0 auto;
+}
+
+h1{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #08a3d9;
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+
+.balloon{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#balloon-container{
+    display: flex;
+}
+.balloon{
+    background: #ff3300;
+    height: 131px;
+    width: 109px;
+    text-align: center;
+    color: #ff3300;
+    font-size: 40px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin: 2.5px 10px 2.5px 0px;
+}
+
+.balloon:nth-child(3n){
+    background: #ffce00;
+    color: #ffce00;
+    
+}
+
+.balloon:nth-child(3n-1){
+    background:#3f7abe;
+    color:#3f7abe;
+   
+}
+
+.balloon:nth-child(5n){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+.balloon:nth-child(13){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+.balloon:nth-child(10n){
+    background:#ff3300;
+    color: #ff3300;
+}
+
+.balloon:nth-child(4n){
+    clear:right;
+}
+
+#no-balloons {
+    display:none;
+    color:#ff3300;
+    font-size:80px;
+}
+
