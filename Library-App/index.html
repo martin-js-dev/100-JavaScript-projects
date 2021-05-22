@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div >
+
+    <div class='wrapper'>
+      <h1>Your Library</h1>
+      <div>
+        <button type="button" id='addBook' onclick="openForm()">Add Book</button>
+        <button type='button' id='resetBooks' >Reset Library</button>
+        <div class="form-popup" id="myForm" >
+          
+          <form  id='form' class="form-container">
+            <h2>New Book</h2>
+            <ion-icon class="close" name="close-outline" onclick="closeForm()"></ion-icon>
+            <label for="title"><b>Title</b></label>
+            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
+        
+            <label for="author"><b>Author</b></label>
+            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
+        
+            <label for="pages"><b>Pages</b></label>
+            <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>         
+            <input name='formRead' id='formIsRead' type='radio' value="Read" required>Read
+            <input name='formRead' id='formNotRead' type='radio' value="Not Read">Not Read
+            <button id='formSubmit'> Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class='container' id="container1"></div>
+
+  </div>
+
+  <script src="script.js" ></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
