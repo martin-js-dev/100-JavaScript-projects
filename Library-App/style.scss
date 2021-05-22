@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+
+body{
+ text-align: center;
+  font-family: 'Poppins';
+  background-color: #f2f2f2;
+}
+ 
+ .wrapper {
+    display: flex;
+    width: 100vmin;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+ }
+
+ h1 {
+     width: 100vmin;
+     flex-grow: 1;
+     text-align: center;
+ }
+ h2{
+   text-transform: uppercase;
+   font-size: 20px;
+ }
+ 
+button, .removeButton, .readStatusBtn {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.removeButton{
+  margin-top: 50px;
+  background-color: #d12f2f;
+  border: none;
+  color: #fff;
+}
+#addBook, #formSubmit{
+  background-color: #32ad32;
+  border: none;
+  color:#fff;
+}
+
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    width: 1000px;
+    margin: auto;
+    margin-top: 10vmin;
+    margin-bottom: 10vmin;
+ }
+  
+  .bookCard {
+    margin: 1.5vmin;
+    text-align: center;
+    height: 42vmin;
+    width: 35vmin;
+    background-color: #a85c5c8a;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 0px 15px;
+    
+}
+
+.form-popup {
+   display: none;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 9;
+   
+}
+.close {
+  color: #d12f2f;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 30px;
+  background-color: #afababe6;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
