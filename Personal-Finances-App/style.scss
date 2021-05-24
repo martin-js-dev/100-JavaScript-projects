@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+  
+  body {
+    background: #f2f2f2;
+    color: #333;
+    font-family: 'Poppins';
+    padding: 50px 50px 100px 50px;
+  }
+  h3{
+    text-transform: uppercase;
+  }
+  h5,h6{
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  .container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+   
+  }
+  .income-feedback,
+  .expense-feedback {
+    display: none;
+  }
+  
+  .income-form {
+    background-color: #ccc6c6;
+    padding: 1rem;
+    padding-top: 4rem;
+    border-radius: 0.25rem;
+    height: 230px;
+  }
+  .expense-form {
+    width: 500px;
+    background-color: #ccc6c6;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .income-submit {
+    background: transparent;
+    color: green;
+    border: 1px solid green;
+  }
+  .expense-submit {
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+  }
+  .expense-submit:hover {
+    background: red;
+    color: #fff;
+  }
+  .income-submit:hover {
+    background: green;
+    color: #fff;
+  }
+  
+  .expense-amount,
+  .expense-title {
+    color: red;
+  }
+  
+  .showItem {
+    display: block;
+  }
+  .info-title {
+    font-size: 1.5rem;
+  }
+  .income {
+    font-size: 1.6rem;
+    color: green;
+  }
+  .expense {
+    font-size: 1.6rem;
+    color: red;
+  }
+  .balance {
+    font-size: 1.6rem;
+  }
+ 
+  .showRed {
+    color: red;
+  }
+  .showGreen {
+    color: green;
+  }
+  .showBlack {
+    color: #333;
+  }
+  .expense-list{
+    background-color: #ccc6c6;
+    padding: 10px;
+    border: 1px solid red;
+    
+  }
+
+  .my-3{
+    float: left;
+  }
+  
