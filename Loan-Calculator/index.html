@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator </title>
+</head>
+<body>
+    
+  <div class="wrapper">
+    <div>
+      <h1> Loan Calculator  </h1>
+  
+      <h3>Amount of the loan ($):</h3>
+      <input id="amount" onchange="calculateLoan();">
+      <h3>Annual interest (%):</h3>
+      <input id="apr" onchange="calculateLoan();">
+      <h3>Repayment period (years):</h3>
+      <input id="years" onchange="calculateLoan();">
+    </div>
+    
+    <div class="result">
+      <h4>Check Approximate Payments:</h4>
+      <button onclick="calculateLoan();">Calculate</button>
+      <h4>Monthly payment:</h4>
+        $<span class="output" id="payment"></span>
+      <h4>Total payment:</h4>
+        $<span class="output" id="total"></span>
+      <h4>Total interest:</h4>
+        $<span class="output" id="totalinterest"></span>
+    
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
