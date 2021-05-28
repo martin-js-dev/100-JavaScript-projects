@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="section">
+    <div class="info">
+        <h1>Maze Game</h1>
+        <p>Escape the maze in 30 seconds or less to win!</p>
+        <p>Use the arrow keys or wasd to navigate</p>
+    </div>
+    <div id="wrapper" >
+        
+        <div id="maze">  
+            <div id="c" ></div>
+            <canvas id="canvas" width="523" height="523" ></canvas>
+            <div id="timerel" ></div>
+        </div>
+
+        
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 class="gamehead"></h2>
+                </div>
+                <div class="modal-footer">
+                    <h2 id="demo" onmouseover="" >Play Again</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
