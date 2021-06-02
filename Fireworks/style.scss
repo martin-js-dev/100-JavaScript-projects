@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+body {
+	font-family: 'Roboto';
+	background: #242424;
+	margin: 0;
+	overflow: hidden;
+}
+
+h1,p{
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+canvas {
+	cursor: pointer;
+	display: block;
+}
