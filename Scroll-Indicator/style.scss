@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  font-family: 'Roboto';
+}
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .progress-wrapper {
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+  }
+  p{
+    width: 50%;
+  }
+  img{
+    width: 400px;
+    height: 400px;
+  }
+  .text{
+    line-height: 4rem;
+  }
+  
+  .progress-bar {
+    height: 15px;
+    background: #08ca83;
+    width: 0%;
+  }
