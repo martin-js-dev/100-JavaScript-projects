@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+body{
+    font-family: 'Montserrat';
+    background-color: #3b0d3b;
+    color:#fff;
+}
+h1{
+    text-transform: uppercase;
+}
+header{
+    text-align: center;
+    background-color: #5e185e;
+    padding: 20px;
+}
+p{
+    text-transform: uppercase;
+}
+#current-word{
+    font-size: 40px;
+}
+.game{
+    background-color: #5e185e;
+    width: 50%;
+    padding: 20px;
+    margin: 30px 0px 0px 300px;
+    border-radius: 5px;
+}
+.wrapper{
+    text-align: center;
+}
+
+input{
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+     border-radius: 5px;
+}
