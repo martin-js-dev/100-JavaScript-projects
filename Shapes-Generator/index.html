@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8>" />
+    <title>Shapes Generator</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+<body >
+      
+    <div class="wrapper">
+        <div class="first">
+            <p>Rectangle</p>
+            <div>
+            <span> Width:</span><br>
+                <input type="number" name="width" id="recWidth"> 
+                <span>Height:</span>
+                <input type="number" name="height" id="recHeight">
+                <button id='rectangle-btn'>Insert</button><br>
+            </div>
+            <p>Square</p>
+            <div>
+                <span>Side:</span><br>
+                <input type="number" name="side" id="squareSide">
+                <button id='square-btn'>Insert</button><br>
+            </div>
+        </div>
+
+        <div>
+            <p>Triangle</p>
+            <div>
+                <span>Height:</span><br>
+                <input type="number" name="height" id="triangleHeight">
+                <button id='triangle-btn'>Insert</button><br>
+            </div>
+            <p>Circle</p>
+            <div>
+                <span>Radius:</span><br>
+                <input type="number" name="radius" id="CircleRadius">
+                <button id='circle-btn'>Insert</button><br>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper-shapes">
+        <h1>Shape Generator</h1>
+        <p>double click on shape to remove</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
