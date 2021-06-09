@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap');
+
+body{
+    font-family: 'Lato';
+    background-color: #f2f2f2;
+    margin-left: 50px;
+    margin-top: 0;
+}
+.navbar{
+    background-color: #c4bebe;
+    margin-left: -50px;
+    padding: 10px 40px;
+}
+form{
+    margin-left: 900px;
+}
+input{
+    padding: 7px;
+}
+button{
+    background-color: purple;
+    border: none;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+#notes{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 2fr;
+    background-color: #c0bcbc;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.note{
+    margin-bottom: 20px;
+}
+
