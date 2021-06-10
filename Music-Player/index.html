@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 >Music Player</h1>
+      <div class="song-wrapper">
+        <div id="cover-wrapper">
+          <img src="" alt="cover-image" id="cover" />
+        </div>
+        <div id="song-box">
+          <audio id="music"></audio>
+          <div id="song-info">
+            <h2 id="title"></h2>
+            <h3 id="artist"></h3>
+            <div id="progress-wrapper">
+              <div id="progress"></div>
+            </div>
+            <div id="timer-bar">
+              <span id="timer">0:00</span>
+              <span id="duration"></span>
+            </div>
+          </div>
+          <div id="cta-main">
+            <i id="prev" class="btn fas fa-backward"></i>
+            <i id="play" class="btn cta fas fa-play"></i>
+            <i id="next" class="btn fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
