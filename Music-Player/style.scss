@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family:  'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.wrapper {
+  width: 42rem;
+}
+
+h1{
+  color: #333;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.song-wrapper {
+  background-color: #fff;
+  border: 1px solid #636262;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cover-wrapper {
+  border-radius: 1rem;
+  position: relative;
+  width: 85%;
+  margin: 20px 0px;
+}
+
+#cover {
+  border-radius: inherit;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#song-box {
+  width: 100%;
+}
+
+#song-info {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin: 20px 0px;
+  background-color: #e2dede;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#artist {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#progress-wrapper {
+  height: 8px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 2rem 0 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#progress {
+  background-color: #333;
+  width: 0%;
+  height: 9px;
+  border-radius: inherit;
+  transition: width 100ms ease-in;
+}
+
+#timer-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+#cta-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4rem;
+  color: #a0a0a0;
+  transition: background 200ms linear, color 200ms linear;
+}
+
+.cta{
+  color: #333;
+}
+
