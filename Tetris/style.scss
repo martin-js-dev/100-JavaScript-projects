@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+:root {
+    font-size: 0.625em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin: auto;
+    max-width: 60rem;
+    color: #d8edea;
+    background-color: #e2b1b1;
+  }
+  
+  header {
+    color: #333;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  div {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  
+  .score-display {
+    font-size: 5rem;
+    
+  }
+  
+  .tetris-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    height: 0;
+    width: 300px;
+  }
+  
+  .figures {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 20rem;
+    height: 40rem;
+    background-color: #c58c8c;
+    border-radius: 5px;
+  }
+  
+  .previous-shape {
+    width: 10rem;
+    padding-left: 2rem;
+    margin-top: -5rem;
+  }
+  
+  .previous-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  .figure {
+    background-image: url(../img/blue_figure.png);
+  }
+  
+  .figure2 {
+    background-image: url(../img/purple_figure.png);
+  }
+  
+  .figure3 {
+    background-image: url(../img/green_figure.png);
+  }
+  
+  .figure4 {
+    background-image: url(../img/navy_figure.png);
+  }
+  
+  .figure5 {
+    background-image: url(../img/pink_figure.png);
+  }
+  
+  
+  button {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    line-height: 23px;
+    font-size: 10px;
+    display: block;
+    margin: 30px;
+    background: #a14242;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 10px;
+    &:active{
+      outline: none;
+    }
+  }
+  
+  .show-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 30rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+    color: #85796b;
+  }
+  
+  .score,
+  .lines-display {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+.lines-cleared{
+  font-size: 12px;
+}
+  
+  
