@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Picture Puzzle</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Picture Puzzle</h2>
+        
+        <div id="puzzle-wrapper" >
+            <h3 id="imgTitle"></h3> 
+            <div class="div1">
+                <ul id="sortable" class="sortable"></ul>
+                <div id="done-image">
+                    <div id="steps">
+                        <div>Count:</div><div class="stepCount">0</div>
+                    </div>
+                    <div id="timer">
+                        Time: <span id="timerPanel"></span> seconds
+                    </div>
+                    <img id="doneImage" />
+                    <p id="levels">
+                        <input type="radio" name="level" id="easy" checked="checked" value="3" /> <label for="easy">Easy</label>
+                        <input type="radio" name="level" id="medium" value="4" /> <label for="medium">Medium</label>
+                        <input type="radio" name="level" id="hard" value="5" /> <label for="hard">Hard</label>		
+                    </p>
+                    <div>
+
+                        <button id="newPhoto" type="button" class="btn">Next Picture</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameOver">
+            <div class="div2" >
+                <h2 >Game over !!</h2>
+                Congratulations!! <br /> You got the picture ready.
+                <br />
+                Steps: <span class="stepCount">0</span> 
+                <br />
+                Time spent: <span class="timeCount">0</span> seconds<br />
+                <div>
+                    <button type="button" onclick="window.location.reload(true);">Play more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
