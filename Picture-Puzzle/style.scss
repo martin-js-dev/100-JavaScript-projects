@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat';
+    margin:0;
+    background-color: #f2f2f2;
+}
+h2{
+    text-align:center;
+    text-transform: uppercase;
+}
+h3{
+    margin:3px 0px;
+    text-align:center;
+}
+
+ #puzzle-wrapper {
+    background-color:#c0bebe;
+    border-radius: 5px;
+    padding:20px 10px;
+    margin: 10px 200px;
+    width:70%;
+    display:none;
+}
+.item{
+    height: 150px;
+}
+.div1{
+    display:inline-block;
+     margin:auto; 
+     width:95%; 
+     vertical-align:top;
+}
+.div2{
+    background-color: #f2f2f2;
+     padding: 20px 30px;
+      text-align: center;
+}
+ #done-image {
+     text-transform: uppercase;
+    display: inline-block;
+    font-size:0.8em;
+    margin: 10px 0px 0px 50px;
+    vertical-align: top;
+    width:380px;
+}
+
+ #timer {
+    display:inline-block;
+    width:48%;
+}
+
+ #steps div {
+    background-color:#c0bebe;
+    display:inline-block;
+    padding:5px 4px;
+    margin: 0px auto;
+    max-width:800px;
+}
+
+    #doneImage{
+    height:280px;
+    width:280px;
+}
+
+ #sortable {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 30px;
+    padding: 0;
+    width: 400px;
+    li {
+        background-size: 400% 400%;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+ button  {
+    background-color:#e63535;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    display: inline;
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-top: 20px;
+}
+#gameOver{
+    display: none;
+}
