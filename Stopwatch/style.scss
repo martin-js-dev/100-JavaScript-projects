@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: 'Poppins';
+    background: #a815a8;
+    color: #f2f2f2;
+  
+  }
+  h1{
+    text-transform: uppercase;
+    margin-top:50px;
+    text-align: center;
+  }
+  .buttons {
+    position: fixed;
+    text-align: center;
+    top: 10em;
+    width: 100%;
+  }
+  
+  .button {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0.5em;
+    text-decoration: none;
+    background-color: #7e087e;;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .stopwatch {
+    font-size: 50px;
+    line-height: 350px;
+    text-align: center;
+    
+  }
+  
+  .checkpoint {
+    margin-top: -100px;
+    list-style: none;
+    margin-left: 45%;
+    font-size: 25px;
+    
+  }
