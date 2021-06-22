@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal finances App</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-11 mx-auto pt-3">
+          
+          <h3>Personal finances</h3>
+          <div class="row">
+           <div class="col-md-5 my-3">
+            
+            <div class="income-feedback alert alert-danger text-capitalize">income feedback</div>
+           
+            <form id="income-form" class=" income-form">
+             <h5 >please enter your income</h5>
+             <div class="form-group">
+              <input type="number" class="form-control income-input" id="income-input">
+             </div>
+             
+             <button type="submit" class="btn text-capitalize income-submit" id="income-submit">calculate</button>
+            </form>
+           </div>
+           <div class="col-md-7">
+            
+        
+      
+          <div class="row">
+           <div class="col-md-5 my-3">
+            
+            <div class="expense-feedback alert alert-danger text-capitalize">expense feedback</div>
+            
+            <form id="expense-form" class=" expense-form">
+             <h5 >please enter your expense</h5>
+             <div class="form-group">
+              <input type="text" class="form-control expense-input" id="expense-input">
+             </div>
+             <h5 >please enter expense amount</h5>
+             <div class="form-group">
+              <input type="number" class="form-control expense-input" id="amount-input">
+             </div>
+            
+             <button type="submit" class="btn text-capitalize expense-submit" id="expense-submit">add expense</button>
+            </form>
+           </div>
+           <div class="col-md-7 my-3">
+           
+           
+        </div>
+       </div>
+       <div class="row my-3">
+        <div class="col-4 text-center mb-2">
+         <h6 >income</h6>
+         
+         <h4 id="income"><span>$ </span><span id="income-amount">0</span></h4>
+        </div>
+        <div class="col-4 text-center">
+         <h6>expenses</h6>
+         
+         <h4 id="expense"><span>$ </span><span id="expense-amount">0</span></h4>
+        </div>
+        <div class="col-4 text-center">
+         <h6 >balance</h6>
+         
+         <h4 id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     
+    <div class="expense-list" id="expense-list">
+
+     <div class="expense-list__info d-flex justify-content-between text-capitalize">
+      <h5 class="list-item">expense title</h5>
+      <h5 class="list-item">expense value</h5>
+      <h5 class="list-item"></h5>
+     </div>
+    
+    </div>
+   </div>
+  </div>
+ </div>
+       <script src="script.js"></script>
+</body>
+</html>
