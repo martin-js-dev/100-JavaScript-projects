@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password strength check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      <h1>Form</h1>
+        <form >
+          <label for="username">Username</label>
+          <input type="text" id="username"  required>
+      
+          <label for="password">Password</label>
+            <input type="password" id="password"  
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and 
+            lowercase letter, and at least 8 or more characters" required>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid upper">A lowercase letter</p>
+        <p id="capital" class="invalid upper">A capital (uppercase) letter</p>
+        <p id="number" class="invalid upper">A number</p>
+        <p id="length" class="invalid upper">Minimum 8 characters</p>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
