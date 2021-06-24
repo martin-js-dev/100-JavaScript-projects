@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tree View</title>
+</head>
+<body>
+    <h1>Tree view</h1>
+    <div class="wrapper">
+        <ul id="myUL">
+            <li><span class="caret">Beverages</span>
+              <ul class="nested">
+                <li>Water</li>
+                <li>Coffee</li>
+                <li><span class="caret">Tea</span>
+                  <ul class="nested">
+                    <li>Black Tea</li>
+                    <li>White Tea</li>
+                    <li><span class="caret">Green Tea</span>
+                      <ul class="nested">
+                        <li>Sencha</li>
+                        <li>Gyokuro</li>
+                        <li>Matcha</li>
+                        <li>Pi Lo Chun</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    
+          <ul id="myUL">
+            <li><span class="caret">Food</span>
+              <ul class="nested">
+                <li>Sandwiches</li>
+                <li>Toasts</li>
+                <li><span class="caret">Burgers</span>
+                  <ul class="nested">
+                    <li>Bacon Burger</li>
+                    <li>Crispy Burger</li>
+                    <li><span class="caret">Chedar Burger</span>
+                      <ul class="nested">
+                        <li>Extra Spicy</li>
+                        <li>Double Size</li>
+                        <li>Vegan</li>
+                        <li>Champion Size</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="myUL">
+            <li><span class="caret">Entertainment</span>
+              <ul class="nested">
+                <li>Music</li>
+                <li>Sports</li>
+                <li><span class="caret">Movies</span>
+                  <ul class="nested">
+                    <li>Action</li>
+                    <li>Thriller</li>
+                    <li><span class="caret">Comedy</span>
+                      <ul class="nested">
+                        <li>newest</li>
+                        <li>most watched</li>
+                        <li>highest ranking</li>
+                        <li>most nominations</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
