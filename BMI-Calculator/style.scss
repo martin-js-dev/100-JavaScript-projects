@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #333;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .wrapper-1, .wrapper-2{
+    padding: 20px;
+  }
+  h1{
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+  }
+  h2{
+    text-align: center;
+  }
+  .form {
+    background-color: #c5c0c0;
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 20px auto 20px auto;
+    display: block;
+    padding: 40px;
+
+  }
+  
+  .text-input {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 35px;
+    }
+    
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+  
+  #submit {
+    margin-top: 50px;
+    margin-left: 150px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    background-color: rebeccapurple;
+    color: #fff;
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .text {
+    display: inline-block;
+    margin: 5px 20px 5px 8px;;
+  }
+  
+ 
+  .wrapper {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      &:checked{
+        background-color: #333;
+      }
+    }
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    
+  }
