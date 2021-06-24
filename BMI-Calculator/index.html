@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Body mass Index Calculator</title>
+</head>
+  <body>
+    <h1>Body mass Index Calculator</h1>
+  <form class="form" id="form" onsubmit="return validateForm()">
+  <div class="wrapper-1">
+    <input type="text" class="text-input" id="age"  required/><p class="text">Age</p>
+    <label class="wrapper">
+    <input type="radio" id="f"><p class="text">Female</p>
+      <span class="checkmark"></span>
+    </label>
+    <label class="wrapper">
+    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+      <span class="checkmark"></span>
+    </label>
+    </div>
+
+  <div class="wrapper-2">
+    <input type="text" class="text-input" id="height" required><p class="text">Height (cm)</p>
+    <input type="text" class="text-input" id="weight" required><p class="text">Weight (kg)</p>
+  </div>
+  <button type="button" id="submit">Submit</button>
+  </form>
+  </body>
+  <script src="script.js"></script>
+</html>
