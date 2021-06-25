@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="generate()">
+    
+    <h2 id="status"></h2>
+    <div>
+        <input type="text" readonly id="generated-captcha">
+    </div>
+    <div class="enter">
+        <input type="text" id="entered-captcha" placeholder="Enter the captcha..">
+    </div>
+    <button type="button" onclick="check()"> check</button>
+    <button type="button" onclick="generate()" id="gen">Generate NeW</button>
+
+</body>
+<script src="script.js"></script>
+</html>
