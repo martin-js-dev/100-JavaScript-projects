@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+    body
+    {
+      font-family: "Poppins";
+      overflow-x: hidden;
+    }
+    h1{
+      text-align: center;
+    }
+    .game-score{
+      font-size: 40px;
+      padding-top: 5%;
+    }
+
+    .snake-game {
+      display: flex;
+      justify-content: space-around;
+      margin-top: -80px;
+    }
+
+    .points {
+      border: 5px solid rebeccapurple;
+      border-radius: 10px;
+      padding: 50px;
+      background-color: #79559c;
+    }
+
+    .gameover{
+      position: absolute;
+      top: 25%;
+      padding: 15px;
+      width: 100%;
+      display: none;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #79559c;
+      font-size: 60px;
+      font-style: italic;
+    }
+    
